@@ -1,6 +1,6 @@
 body{
 	background:url("../images/1.jpeg") no-repeat;
-	background-size:contain;
+	background-size:100%;
 }
 
 li{

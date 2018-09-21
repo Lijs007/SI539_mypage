@@ -1,6 +1,5 @@
 body{
     background-color:#000000;
-    color: white;
 }
 
 li{
@@ -8,4 +7,7 @@ li{
 	display:inline;
 	background-color: black;
 	color: white;
+}
+p{
+	color: white
 }

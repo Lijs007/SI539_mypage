@@ -5,7 +5,7 @@
 }
 
 body{
-	background-color: black;
+	background-color: blue;
 }
 
 .navtop {
@@ -54,17 +54,18 @@ body{
 	text-indent: 0px;
 }
 
-.navleftback {
-	background-color:blue;
-	height: 100%;
-	width: 90%
-}
 
 .navleft ul {
 	display: grid;
-	grid:1fr 1fr/ 1fr 1fr 1fr 1fr;
+	grid: 1fr 1fr 1fr 1fr 1fr 1fr 1fr /1fr;
 	width: 100%;
 	margin: 0 auto;
+}
+
+.navleftback {
+	background-color:#222222;
+	height: 100%;
+	width: 90%
 }
 
 
@@ -148,7 +149,7 @@ address{
 
 
 footer {
-    background-color:blue;
+    background-color:black;
     color:white;
     clear:both;
     text-align:center;
@@ -157,7 +158,8 @@ footer {
 
 .container{
 	display: grid;
-	grid: 150px 1fr / 1fr;
+	grid: 1fr/1fr 5fr;
+	grid-auto-flow: column;
 }
 
 .Mali {
@@ -176,29 +178,6 @@ h1 {
 
 @media only screen {
 		body{ background: black; }
-
-		.navleft ul {
-			display: grid;
-			grid: 1fr 1fr 1fr 1fr 1fr 1fr 1fr /1fr;
-			width: 100%;
-			margin: 0 auto;
-		}
-		
-		.navleftback {
-			background-color:#222222;
-			height: 100%;
-			width: 90%
-		}
-
-		.container{
-			display: grid;
-			grid: 1fr/1fr 5fr;
-			grid-auto-flow: column;
-		}
-
-		footer {
-			background: black;
-		}
 
 		.navtop ul {
 			display: grid;
